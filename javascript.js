@@ -1,11 +1,11 @@
-function computerPlay(arr) {
-    const randomIndex = Math.floor(Math.random() * arr.length);
+const computerOptins = ['rock', 'paper', 'scissors'];
 
-    const item = arr[randomIndex];
-
-    return item;
+function computerPlay() {
+    const randomIndex = Math.floor(Math.random() * 3);
+    
+    return computerOptins[randomIndex];
 }
 
-const array = ['rock', 'paper', 'scissors'];
 
 
+console.log(computerPlay());
