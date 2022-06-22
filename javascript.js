@@ -4,7 +4,6 @@ let computerScore = 0;
 
 function computerPlay() {
     const randomIndex = Math.floor(Math.random() * 3);
-    
     return computerOptins[randomIndex];
 }
 
@@ -34,12 +33,11 @@ function playRound(playerSelection, computerSelection) {
     }  
   }
   
-  let playerSelection = 'rock';
-  
   function game() {
       for (let i = 0; i < 5; i++) {
+        let playerSelection = prompt("Chose rock or paper or scissors", " ").toLowerCase();
         let computerSelection = computerPlay();
-        playRound(playerSelection, computerSelection);
+        console.log(playRound(playerSelection, computerSelection));
       }
         if (playerScore > computerScore) {
             console.log("You Win Game!");
